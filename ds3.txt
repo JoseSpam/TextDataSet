@@ -1,0 +1,49 @@
+
+Download
+Developer Resources
+Help
+Search
+Help Resources
+Installing Java
+Remove older versions
+Disable Java
+Using Java
+General questions
+Security
+Support options
+Java Help Center
+Welcome to the Java.com Help Center where we describe solutions for issues you might encounter when downloading and using Java on your computer. We track the most frequently reported issues and error codes and provide answers for them in this section.
+Top
+JDK Bundle Extensions Truncated When Downloading Using Firefox 102
+Printing issues with Java
+Why do I see the Java Update Needed message: Java is out of date?
+Troubleshooting tips for running Java
+Developer - Java Security Manifest Changes in the Browser
+Why are Java applications blocked by your security settings?
+Error message: Java Platform SE Binary has stopped working
+How do I disable Java in my web browser?
+Restore Java Security Prompts
+» View all
+Terminology: Java is the general term used to denote the software and its components, which include 'Java Runtime Environment' (JRE), 'Java Virtual Machine' (JVM) and also 'Plug-in'. When error messages specifically include terms such as JRE, JVM and Plug-in, we retain them.
+
+
+Versions: Version refers to the Java family and the Update number. Examples: On the website or under Windows programs, version appears as Java 8 Update 25.
+The Help section contains information on the following versions of Java.
+
+Current Version Name	Replaces Old Name	Other Legacy Formats
+Java 8
+
+Java 8 Update x
+
+JRE 8.0
+
+JRE 1.8
+
+1.8.0_0x
+© 2022 Oracle
+Select Language
+Support
+Privacy
+Cookie Preferences
+Terms of Use
+Trademarks
