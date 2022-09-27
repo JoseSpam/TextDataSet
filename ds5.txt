@@ -1,0 +1,110 @@
+Skip to content
+ 
+Search…
+All gists
+Back to GitHub
+@JoseSpam 
+@bzdgn
+bzdgn/GenerateDummyCode.java
+Last active 2 months ago • Report abuse
+2
+0
+Code
+Revisions
+4
+Stars
+2
+<script src="https://gist.github.com/bzdgn/78b6f92b391650a48c50.js"></script>
+Dummy Code Generator : 10000 Lines of Useless Code
+GenerateDummyCode.java
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
+
+public class GenerateDummyCode {
+	public static void main(String[] args) {
+		String className = "Eben";
+		String newLine = "\n";
+		String tab = "\t";
+		String classStart = "public class " + className + " {";
+		String closeBracket = "}";
+		String mainStart = "public static void main(String[] args) {";
+		String dummyContent = "";
+		String temp = null;
+		int size = 10000;
+		for (int i = 1; i <= size; i++) {
+			temp = String.format("System.out.println(\" %6d .ci satir\");", i);
+			dummyContent += tab + tab + temp + newLine;
+		}
+		
+		String outputCode = 
+				classStart + newLine + newLine + 
+				tab + mainStart + newLine + newLine +  
+				dummyContent + newLine + 
+				tab + closeBracket + newLine + 
+				closeBracket + newLine;
+		
+//		System.out.println(result); // To print the output to the console
+
+		PrintWriter out = null;
+		
+		try {
+			out = new PrintWriter(className + ".java");
+		} catch (FileNotFoundException e) {
+			System.out.println("File not found!");
+		}
+		
+		out.println(outputCode);
+		out.close();
+	}
+}
+@bzdgn
+Author
+bzdgn commented on Dec 1, 2015
+This dummy code is about a funny job ad, which targets developers that had already written at least 10000 lines of code in their lives.
+
+Here;
+https://translate.google.com/translate?sl=tr&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=http%3A%2F%2Fwww.kariyer.net%2Fveripark%2Fyazilim-gelistirme-uzmani-net-is-ilani-i1393020%2F%3F%26tmpsno%3D1%26isaramalog%3D372811184%26sirano%3D3%26isaratipi%3D2&edit-text=&act=url
+
+@emrekekec
+emrekekec commented on Dec 31, 2015
+Dear bzgdn,
+
+If Eben.java file is not found, you will receive a NullPointerException inside stream writer since you are swallowing the Exception and trying to access an unitialized object on the heap.
+
+Keep up the good work, you are almost there
+
+Best Regards
+
+@staticalliam7
+staticalliam7 commented on Nov 23, 2021
+yoink! that's mine now, need filler code
+
+@c-dawkins
+c-dawkins commented on Dec 9, 2021
+u
+
+@JoseSpam
+ 
+Add heading textAdd bold text, <Ctrl+b>Add italic text, <Ctrl+i>
+Add a quote, <Ctrl+Shift+.>Add code, <Ctrl+e>Add a link, <Ctrl+k>
+Add a bulleted list, <Ctrl+Shift+8>Add a numbered list, <Ctrl+Shift+7>Add a task list, <Ctrl+Shift+l>
+Directly mention a user or team
+Reference an issue or pull request
+Leave a comment
+No file chosen
+Attach files by dragging & dropping, selecting or pasting them.
+Styling with Markdown is supported
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
